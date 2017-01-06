@@ -8,3 +8,6 @@ python ./sync.py
 
 #install oh-my-fish dotfiles
 python ./sync.py ./omf $HOME/.config/omf
+
+
+echo "Instalation complete!"
