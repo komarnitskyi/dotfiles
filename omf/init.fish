@@ -19,19 +19,13 @@ function color
     set_color $argv
 end
 
-function citty
-  color $BLUE
-  echo "_._     _,-'''''`-._"
-  echo "(,-.`._,'(       |\`-/|"
-  echo "   `-.-' \ )-`( , o o)"
-  echo "-bf-      `-   \`_`'''-"
-  color normal
-end
 
-color $BLUE
-echo ╔┓┏╦━━╦┓╔┓╔━━╗
-echo ║┗┛║┗━╣┃║┃║╯╰║
-echo ║┏┓║┏━╣┗╣┗╣╰╯║
-echo ╚┛┗╩━━╩━╩━╩━━╝
-color normal
-citty
+  color $BLUE
+  echo  "     .-.                       .--. _       .-.    "
+  echo  "     : :                      : .-':_;      : :    "
+  echo  ".--. : `-.   ,-.,-.,-..-..-.  : `; .-. .--. : `-.  "
+  echo "' .; :: .. :  : ,. ,. :: :; :  : :  : :`._-.': .. :"
+  echo "`.__.':_;:_;  :_;:_;:_;`._. ;  :_;  :_;`.__.':_;:_;"
+  echo "                        .-. :                      "
+  echo "                        `._.'                      "
+  color normal
