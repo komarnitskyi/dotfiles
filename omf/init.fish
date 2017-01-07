@@ -15,10 +15,17 @@ alias ..... "cd ../../../.."
 set BLUE 005284
 set RED dd4444
 
+function sudo
+    if test "$argv" = !!
+        eval command sudo $history[1]
+    else
+        command sudo $argv
+    end
+end
+
 function color
     set_color $argv
 end
-
 
   color $BLUE
   echo  "     .-.                       .--. _       .-.    "
