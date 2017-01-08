@@ -1,3 +1,5 @@
+# theme config
+set -g PRFX 'ToDo'
 # aliasess
 
 # navigation
@@ -11,6 +13,9 @@ alias ... "cd ../.."
 alias .... "cd ../../.."
 alias ..... "cd ../../../.."
 
+# helpers
+alias rf "rm -rf"
+
 # colours
 set BLUE 005284
 set RED dd4444
@@ -21,6 +26,10 @@ function sudo
     else
         command sudo $argv
     end
+end
+
+function mko
+  eval command mkdir $argv | cd $argv
 end
 
 function color
