@@ -10,5 +10,6 @@ Just an another dotfiles with supports of Fish (oh-my-fish).
 
 ## Instalation
 ```bash
-cd ~ | git clone https://github.com/komarnitskyi/dotfiles.git | cd dotfiles | ./setup.sh
+cd ~ & git clone https://github.com/komarnitskyi/dotfiles.git
+cd ~/dotfiles & ./setup.sh
 ```
