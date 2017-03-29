@@ -1,3 +1,5 @@
+source $HOME/private_aliases.fish
+
 # theme config
 set -g PRFX 'ToDo'
 # aliasess
