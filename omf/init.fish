@@ -15,8 +15,25 @@ alias ... "cd ../.."
 alias .... "cd ../../.."
 alias ..... "cd ../../../.."
 
+# git
+alias "gf" "git fetch"
+alias "gd" "git diff"
+alias "gs" "git status"
+alias "gc" "git commit"
+alias "gcm" "git commit -m"
+alias "gch" "git checkout"
+alias "gm" "git merge"
+alias "ga" "git add"
+alias "ga." "git add ."
+
+# browsers
+alias "opera" "open /Applications/Opera.app"
+alias "chrome" "open /Applications/Google\ Chrome.app"
+alias "ffox" "open /Applications/Firefox.app"
+
 # helpers
 alias rf "rm -rf"
+alias 'c' "clear"
 
 # colours
 set BLUE 005284
