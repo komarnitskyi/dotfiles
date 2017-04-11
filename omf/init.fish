@@ -16,6 +16,7 @@ alias .... "cd ../../.."
 alias ..... "cd ../../../.."
 
 # git
+alias "g" "git"
 alias "gf" "git fetch"
 alias "gd" "git diff"
 alias "gs" "git status"
@@ -32,8 +33,8 @@ alias "chrome" "open /Applications/Google\ Chrome.app"
 alias "ffox" "open /Applications/Firefox.app"
 
 # helpers
-alias rf "rm -rf"
-alias 'c' "clear"
+alias "rf" "rm -rf"
+alias "c" "clear"
 
 # colours
 set BLUE 005284
@@ -56,11 +57,5 @@ function color
 end
 
   color $BLUE
-  echo  "     .-.                       .--. _       .-.    "
-  echo  "     : :                      : .-':_;      : :    "
-  echo  ".--. : `-.   ,-.,-.,-..-..-.  : `; .-. .--. : `-.  "
-  echo "' .; :: .. :  : ,. ,. :: :; :  : :  : :`._-.': .. :"
-  echo "`.__.':_;:_;  :_;:_;:_;`._. ;  :_;  :_;`.__.':_;:_;"
-  echo "                        .-. :                      "
-  echo "                        `._.'                      "
+	echo "Enjoy the Journey, $USER!"
   color normal
