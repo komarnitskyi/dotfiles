@@ -13,6 +13,8 @@ Just an another dotfiles with supports of Fish (oh-my-fish).
 cd ~ & git clone https://github.com/komarnitskyi/dotfiles.git
 cd ~/dotfiles & ./setup.sh
 ```
+To set `fish` as default shell use following command `chsh -s 'which fish'`
+
 ## Private configuration
-The dotfiles will include a `$HOME/private_aliases.fish` file, that should 
+The dotfiles will include a `$HOME/private_aliases.fish` file, that should
 contain aliases or something other only for that computer, where it placed.
