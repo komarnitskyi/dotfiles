@@ -36,6 +36,9 @@ alias "ffox" "open /Applications/Firefox.app"
 alias "rf" "rm -rf"
 alias "c" "clear"
 
+# fun
+alias "hey" "npm"
+
 # colours
 set BLUE 005284
 set RED dd4444
