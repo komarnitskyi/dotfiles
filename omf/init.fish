@@ -5,16 +5,15 @@ set -g PRFX 'ToDo'
 # aliasess
 
 # navigation
-alias gop "cd /Volumes/data/projects/_projects"
-alias gopl "cd /Volumes/data/projects/_play"
-alias gof "cd /Volumes/data/projects/_forks"
+alias gop "cd ~/projects/_projects"
+alias gopl "cd ~/projects/_play"
+alias gof "cd ~/projects/_forks"
 alias dt "cd ~/Desktop"
 alias dl "cd ~/Downloads"
 alias .. "cd .."
 alias ... "cd ../.."
 alias .... "cd ../../.."
 alias ..... "cd ../../../.."
-
 # git
 alias "g" "git"
 alias "gf" "git fetch"
@@ -42,6 +41,10 @@ alias "hey" "npm"
 # colours
 set BLUE 005284
 set RED dd4444
+
+# Add nested node_modules folder to the PATH variable
+
+set PATH ./node_modules/.bin/ $PATH
 
 function sudo
     if test "$argv" = !!
