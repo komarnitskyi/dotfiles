@@ -10,6 +10,7 @@ alias .. "cd .."
 alias ... "cd ../.."
 alias .... "cd ../../.."
 alias ..... "cd ../../../.."
+
 # git
 alias "g" "git"
 alias "gf" "git fetch"
@@ -38,7 +39,7 @@ alias "hey" "npm"
 set BLUE 005284
 set RED dd4444
 
-if test -d $HOME/private_aliases.fish
+if test -e $HOME/private_aliases.fish
     source $HOME/private_aliases.fish
 end
 
