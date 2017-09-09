@@ -1,7 +1,3 @@
-source $HOME/private_aliases.fish
-
-# theme config
-set -g PRFX 'ToDo'
 # aliasess
 
 # navigation
@@ -42,8 +38,11 @@ alias "hey" "npm"
 set BLUE 005284
 set RED dd4444
 
-# Add nested node_modules folder to the PATH variable
+if test -d $HOME/private_aliases.fish
+    source $HOME/private_aliases.fish
+end
 
+# Add nested node_modules folder to the PATH variable
 set PATH ./node_modules/.bin/ $PATH
 
 function sudo
