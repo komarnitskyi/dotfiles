@@ -1,5 +1,3 @@
-# theme config
-set -g PRFX 'ToDo'
 # aliasess
 if test -n "$PROJECTS_DIR"
 	echo "Your projects dir is $PROJECTS_DIR"
@@ -8,7 +6,6 @@ else
 	echo "A PROJECTS_DIR variable wasn't found. Used default value: ~/projects"
 end
 # navigation
-alias pdir "echo $PROJECTS_DIR"
 alias gop "cd  $PROJECTS_DIR/_projects"
 alias gopl "cd $PROJECTS_DIR/_play"
 alias gof "cd $PROJECTS_DIR/_forks"
@@ -18,7 +15,6 @@ alias .. "cd .."
 alias ... "cd ../.."
 alias .... "cd ../../.."
 alias ..... "cd ../../../.."
-
 # git
 alias "gbranch" "git rev-parse --abbrev-ref HEAD"
 alias "g" "git"
@@ -41,9 +37,19 @@ alias "ffox" "open /Applications/Firefox.app"
 alias "rf" "rm -rf"
 alias "c" "clear"
 
+# fun
+alias "hey" "npm"
+
 # colours
 set BLUE 005284
 set RED dd4444
+
+if test -d $HOME/private_aliases.fish
+    source $HOME/private_aliases.fish
+end
+
+# Add nested node_modules folder to the PATH variable
+set PATH ./node_modules/.bin/ $PATH
 
 function sudo
     if test "$argv" = !!
