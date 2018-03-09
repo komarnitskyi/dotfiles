@@ -1,13 +1,17 @@
-source $HOME/private_aliases.fish
-
 # theme config
 set -g PRFX 'ToDo'
 # aliasess
-
+if test -n "$PROJECTS_DIR"
+	echo "Your projects dir is $PROJECTS_DIR"
+else
+	set -x PROJECTS_DIR "~/projects"
+	echo "A PROJECTS_DIR variable wasn't found. Used default value: ~/projects"
+end
 # navigation
-alias gop "cd /Volumes/data/projects/_projects"
-alias gopl "cd /Volumes/data/projects/_play"
-alias gof "cd /Volumes/data/projects/_forks"
+alias pdir "echo $PROJECTS_DIR"
+alias gop "cd  $PROJECTS_DIR/_projects"
+alias gopl "cd $PROJECTS_DIR/_play"
+alias gof "cd $PROJECTS_DIR/_forks"
 alias dt "cd ~/Desktop"
 alias dl "cd ~/Downloads"
 alias .. "cd .."
@@ -16,6 +20,7 @@ alias .... "cd ../../.."
 alias ..... "cd ../../../.."
 
 # git
+alias "gbranch" "git rev-parse --abbrev-ref HEAD"
 alias "g" "git"
 alias "gf" "git fetch"
 alias "gd" "git diff"
@@ -48,14 +53,18 @@ function sudo
     end
 end
 
+function gpub
+	git push -u origin (gbranch)
+end
+
 function mko
-  eval command mkdir $argv | cd $argv
+	eval command mkdir $argv | cd $argv
 end
 
 function color
     set_color $argv
 end
 
-  color $BLUE
+color $BLUE
 	echo "Enjoy the Journey, $USER!"
-  color normal
+color normal
