@@ -18,6 +18,8 @@ alias ..... "cd ../../../.."
 # git
 alias "gbranch" "git rev-parse --abbrev-ref HEAD"
 alias "g" "git"
+alias "push" "git push"
+alias "pull" "git pull"
 alias "gf" "git fetch"
 alias "gd" "git diff"
 alias "gs" "git status"
