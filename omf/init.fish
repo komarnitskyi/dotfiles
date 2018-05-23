@@ -1,3 +1,9 @@
+if test -e "$HOME/dotfiles/private_aliases.fish"
+    source "$HOME/dotfiles/private_aliases.fish"
+else
+	echo "Private aliases not found"
+end
+
 # aliasess
 if test -n "$PROJECTS_DIR"
 	echo "Your projects dir is $PROJECTS_DIR"
@@ -45,10 +51,6 @@ alias "hey" "npm"
 # colours
 set BLUE 005284
 set RED dd4444
-
-if test -d $HOME/private_aliases.fish
-    source $HOME/private_aliases.fish
-end
 
 # Add nested node_modules folder to the PATH variable
 set PATH ./node_modules/.bin/ $PATH
