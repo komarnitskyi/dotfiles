@@ -46,6 +46,10 @@ alias "ffox" "open /Applications/Firefox.app"
 alias "rf" "rm -rf"
 alias "c" "clear"
 
+# docker
+alias "dc" "docker-compose"
+alias "dcr" "docker-compose run -d"
+
 # fun
 alias "hey" "npm"
 
@@ -55,6 +59,13 @@ set RED dd4444
 
 # Add nested node_modules folder to the PATH variable
 set PATH ./node_modules/.bin/ $PATH
+
+function killserver --argument port
+     for pid in (lsof -i TCP:$port | awk '/LISTEN/{print $2}')
+         echo -n "Found server for port $port with pid $pid: "
+         kill -9 $pid; and echo "killed."; or echo "could not kill."
+     end
+end
 
 function sudo
     if test "$argv" = !!
