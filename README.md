@@ -8,6 +8,10 @@ Just an another dotfiles with supports of Fish (oh-my-fish).
 * .gitignore
 * .editorconfig
 
+## Fish helpers
+* `killserver <port>` kills server that listen `<port>`
+* `mko <folder>` alias for `mkdir <folder>` and `cd <folder>`
+
 ## Instalation
 ```bash
 cd ~ & git clone https://github.com/komarnitskyi/dotfiles.git
